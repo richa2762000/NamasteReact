@@ -1,0 +1,31 @@
+{
+  "name": "namastereact",
+  "version": "1.0.0",
+  "description": "react project",
+  "scripts": {
+    "start":"parcel react.html",
+    "builf":"parcel build react.html",
+    "test": "just"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richa2762000/NamasteReact.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Richa Chachan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richa2762000/NamasteReact/issues"
+  },
+  "homepage": "https://github.com/richa2762000/NamasteReact#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
