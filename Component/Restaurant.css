@@ -1,0 +1,18 @@
+.rest-card {
+  /* border: 1px solid red; */
+  width: 20vw;
+  cursor: pointer;
+  /* height: 30vh; */
+}
+.rest-card:hover {
+  border: 1px solid black;
+}
+.rest-img img {
+  height: 30vh;
+  width: 20vw;
+  padding: auto;
+  /* border: 1px solid black; */
+}
+.rest-details {
+  padding-left: 1%;
+}
