@@ -1,28 +1,25 @@
-import { resList } from "../Json/resList";
+import { cdnUrl } from "../Json/constant";
 import "./Restaurant.css";
 
-const Restaurant = () => {
+const Restaurant = (props) => {
+  // destructring
+  const { resData } = props;
+  const { name, avgRating, cuisines, costForTwo, cloudinaryImageId } =
+    resData?.data;
   return (
     <>
-      {resList.map((list) => (
-        <div className="rest-card" key={list.data.id}>
-          <div className="rest-img">
-            <img
-              src={
-                "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-                list.data.cloudinaryImageId
-              }
-              alt="loafing"
-            ></img>
-          </div>
-          <div className="rest-details">
-            <h4>{list.data.name}</h4>
-            <h4>{list.data.avgRating} Star</h4>
-            <h4>{list.data.cuisines.join(", ")}</h4>
-            <h4>{list.data.costForTwo}</h4>
-          </div>
+      <div className="rest-card">
+        <div className="rest-img">
+          <img src={cdnUrl + cloudinaryImageId} alt="loafing"></img>
         </div>
-      ))}
+
+        <div className="rest-details">
+          <h4>{name}</h4>
+          <h4>{avgRating} Star</h4>
+          <h4>{cuisines.join(", ")}</h4>
+          <h4>{costForTwo}</h4>
+        </div>
+      </div>
     </>
   );
 };
