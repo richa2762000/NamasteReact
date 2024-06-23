@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Header from "./Component/Header";
-import Body from "./Component/Body";
+import Header from "./src/Component/Header/Header";
+import Body from "./src/Component/Body/Body";
+
 
 const App = () => {
   return (
     <>
-      <Header />
-      <Body />
+      <Header/>
+      <Body/>
     </>
   );
 };

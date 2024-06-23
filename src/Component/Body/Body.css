@@ -1,0 +1,20 @@
+.search{
+    margin-top: 1%;
+}
+.search input {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  width: 20vw;
+}
+.res-container {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10;
+  margin-top: 1%;
+}
