@@ -1,12 +1,13 @@
 import React from "react";
 import './Header.css';
+import { logoUrl } from "../Json/constant";
 const Header = () => {
   return (
     <>
       <div className="container">
         <div className="header-img">
           <img
-            src="https://png.pngtree.com/png-vector/20220708/ourmid/pngtree-fast-food-logo-png-image_5763171.png"
+            src={logoUrl}
             alt="loading"
           />
         </div>
