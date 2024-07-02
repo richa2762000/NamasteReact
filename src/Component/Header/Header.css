@@ -1,0 +1,23 @@
+.container{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+}
+.header-img img{
+    height: 10vh;
+}
+.nav-container{
+    /* border: 2px solid red; */
+    width: 30vw;
+}
+.nav-container ul{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0; */
+}
+.nav-container ul li{
+    list-style-type: none;
+    font-size: medium;
+}
