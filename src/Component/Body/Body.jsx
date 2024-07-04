@@ -1,44 +1,82 @@
-import { resList } from "../Json/resList";
 import Restaurant from "../Restaurant/Restaurant";
 import "./Body.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   // search
   const [searchInput, setSearchInput] = useState("");
-  const handleInputChange = (e) => {
-    setSearchInput(e.target.value);
+  //  for API
+  const [filterList, setFilterList] = useState([]);
+  // we will make the cop of our original data for the filterRestaurant
+  const [filterSearchRest, setFilterSearchRest] = useState([]);
+  useEffect(() => {
+    fetchData();
+    console.log("rendered");
+  }, []);
+
+  const fetchData = async () => {
+    const data = await fetch(
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.9615398&lng=79.2961468&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+    );
+    const json = await data.json();
+    console.log("hson", json);
+    setFilterList(
+      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
+
+    setFilterSearchRest(
+      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
   };
 
-  //button
-  const [button, setButton] = useState("Top Rated Restaurants");
-
-  // create filter emptyList for restaurant
-  const [filterList, setFilterList] = useState(resList);
+  // top rated rest
   const topRatedRest = () => {
-    const filtered = resList.filter((res) => res.data.avgRating > 4);
-    setFilterList(filtered);
-    setButton("Remove Top Rated Resataurants");
+    const filterd = filterList.filter(
+      (filterData) => filterData.info.avgRating > 4
+    );
+    // setFilterSearchRest(filterd);
   };
-
-  return (
+  // filter the rest cards and update the UI
+  const searchData = () => {
+    const filterRest = filterList.filter((res) =>
+      res.info.name.toLowerCase().includes(searchInput.toLowerCase())
+    );
+    setFilterSearchRest(filterRest);
+  };
+  return filterList.length === 0 ? (
+    <Shimmer />
+  ) : (
     <>
+      {/* {console.log("return")} first jsx return then useEffect */}
       <div className="body">
-        <div className="search">
-          <input
-            type="text"
-            placeholder="Search"
-            onChange={handleInputChange}
-            value={searchInput}
-          />
+        <div className="filter">
+          <div className="search">
+            <input
+              type="text"
+              placeholder="Search"
+              onChange={(e) => {
+                setSearchInput(e.target.value);
+              }}
+              value={searchInput}
+            />
+            <button className="search-cafe" onClick={searchData}>
+              Search
+            </button>
+          </div>
           <div className="top-rated-rest">
-            <button onClick={topRatedRest}>{button}</button>
+            <button onClick={topRatedRest}>Top Rated Restaurants</button>
           </div>
         </div>
         <div className="res-container">
-          {/* filter data */}
-          {filterList.map((restaurant) => (
-            <Restaurant key={restaurant.data.id} resData={restaurant} />
+          {filterSearchRest.map((restaurant) => (
+            <Link
+              key={restaurant.info.id}
+              to={"/restaurants/" + restaurant.info.id}
+            >
+              <Restaurant resData={restaurant} />
+            </Link>
           ))}
         </div>
       </div>

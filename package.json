@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "react project",
   "scripts": {
-    "start":"parcel react.html",
-    "builf":"parcel build react.html",
+    "start": "parcel react.html",
+    "builf": "parcel build react.html",
     "test": "just"
   },
   "repository": {
@@ -26,6 +26,8 @@
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  }
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.24.1"
+  },
+  "main": "App.js"
 }

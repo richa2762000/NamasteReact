@@ -1,23 +1,28 @@
-import React from "react";
-import './Header.css';
+import React, { useState } from "react";
+import "./Header.css";
 import { logoUrl } from "../Json/constant";
+import { Link } from "react-router-dom";
 const Header = () => {
+  const [loginBtn, setLoginBtn] = useState("Login");
+  const loginClickBtn = () => {
+     loginBtn === "Login" ? setLoginBtn("Logout") : setLoginBtn("Login");
+  };
   return (
     <>
       <div className="container">
         <div className="header-img">
-          <img
-            src={logoUrl}
-            alt="loading"
-          />
+          <img src={logoUrl} alt="loading" />
         </div>
         <div className="nav-container">
           <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Contact</li>
-            <li>Cart</li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/cart">Cart</Link></li>
           </ul>
+        </div>
+        <div className="button-login">
+          <button onClick={loginClickBtn}>{loginBtn}</button>
         </div>
       </div>
     </>
