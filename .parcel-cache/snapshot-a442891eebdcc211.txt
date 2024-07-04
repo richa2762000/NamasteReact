@@ -1,22 +1,22 @@
 6067
-74/home/decimal/Desktop/NamasteReact/NamasteReact/dist/react.7826abd7.js.map1720097108765632995 0
-75/home/decimal/Desktop/NamasteReact/NamasteReact/dist/react.9f3b896f.css.map1720097108721632887 0
-63/home/decimal/Desktop/NamasteReact/NamasteReact/dist/react.html1720097108717632877 0
-52/home/decimal/Desktop/NamasteReact/NamasteReact/dist1720097108705632847 1
-103/home/decimal/Desktop/NamasteReact/NamasteReact/src/Component/Restaurant/DifferentRestList/Restlist.jsx1720096569676736855 0
-90/home/decimal/Desktop/NamasteReact/NamasteReact/src/Component/Restaurant/DifferentRestList1720096559208731594 1
 77/home/decimal/Desktop/NamasteReact/NamasteReact/src/Component/Json/resList.js1720093970576923796 0
 78/home/decimal/Desktop/NamasteReact/NamasteReact/src/Component/Json/constant.js1720094259375033320 0
 77/home/decimal/Desktop/NamasteReact/NamasteReact/src/Component/Json/chinese.js1720093970572923836 0
-75/home/decimal/Desktop/NamasteReact/NamasteReact/src/Component/Body/Body.jsx1720097194005849563 0
+75/home/decimal/Desktop/NamasteReact/NamasteReact/src/Component/Body/Body.jsx1720106265292612974 0
 66/home/decimal/Desktop/NamasteReact/NamasteReact/src/Component/Body1720094259375033320 1
 67/home/decimal/Desktop/NamasteReact/NamasteReact/src/Component/About1720096764492937705 1
+103/home/decimal/Desktop/NamasteReact/NamasteReact/src/Component/Restaurant/DifferentRestList/Restlist.jsx1720096569676736855 0
+90/home/decimal/Desktop/NamasteReact/NamasteReact/src/Component/Restaurant/DifferentRestList1720097108317631893 1
 87/home/decimal/Desktop/NamasteReact/NamasteReact/src/Component/Restaurant/Restaurant.jsx1720096661700808978 0
 81/home/decimal/Desktop/NamasteReact/NamasteReact/src/Component/Contact/Contact.jsx1720096809481007703 0
 69/home/decimal/Desktop/NamasteReact/NamasteReact/src/Component/Contact1720096750060916910 1
 70/home/decimal/Desktop/NamasteReact/NamasteReact/src/Component/Error.js1720097056657507673 0
 61/home/decimal/Desktop/NamasteReact/NamasteReact/src/Component1720097055189504228 1
 51/home/decimal/Desktop/NamasteReact/NamasteReact/src1720093970572923836 1
+75/home/decimal/Desktop/NamasteReact/NamasteReact/dist/react.9f3b896f.css.map1720097108721632887 0
+74/home/decimal/Desktop/NamasteReact/NamasteReact/dist/react.7826abd7.js.map1720097108765632995 0
+63/home/decimal/Desktop/NamasteReact/NamasteReact/dist/react.html1720097108717632877 0
+52/home/decimal/Desktop/NamasteReact/NamasteReact/dist1720097108769633005 1
 65/home/decimal/Desktop/NamasteReact/NamasteReact/package-lock.json1720096999889378066 0
 54/home/decimal/Desktop/NamasteReact/NamasteReact/App.js1720094259375033320 0
 79/home/decimal/Desktop/NamasteReact/NamasteReact/node_modules/clone/package.json1720096998457374897 0
@@ -1093,7 +1093,7 @@
 134/home/decimal/Desktop/NamasteReact/NamasteReact/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/syntax/node/Value.js1720096998977376047 0
 140/home/decimal/Desktop/NamasteReact/NamasteReact/node_modules/@parcel/optimizer-htmlnano/node_modules/csso/lib/replace/property/background.js1720096998657375339 0
 83/home/decimal/Desktop/NamasteReact/NamasteReact/node_modules/css-tree/cjs/tokenizer1720096998929375941 1
-72/home/decimal/Desktop/NamasteReact/NamasteReact/src/Component/Restaurant1720096536116722295 1
+72/home/decimal/Desktop/NamasteReact/NamasteReact/src/Component/Restaurant1720097099973611451 1
 108/home/decimal/Desktop/NamasteReact/NamasteReact/node_modules/@parcel/core/test/fixtures/config-node-pipeline1720096998589375189 1
 99/home/decimal/Desktop/NamasteReact/NamasteReact/node_modules/@parcel/core/src/public/BundleGroup.js1720096998837375738 0
 97/home/decimal/Desktop/NamasteReact/NamasteReact/node_modules/@remix-run/router/dist/router.js.map1720096998813375685 0
@@ -4922,7 +4922,7 @@
 104/home/decimal/Desktop/NamasteReact/NamasteReact/node_modules/css-tree/cjs/syntax/node/MediaCondition.cjs1720096998861375791 0
 97/home/decimal/Desktop/NamasteReact/NamasteReact/node_modules/css-tree/cjs/syntax/config/lexer.cjs1720096998849375765 0
 93/home/decimal/Desktop/NamasteReact/NamasteReact/node_modules/css-tree/cjs/syntax/node/Nth.cjs1720096998873375817 0
-47/home/decimal/Desktop/NamasteReact/NamasteReact1720097009285398987 1
+47/home/decimal/Desktop/NamasteReact/NamasteReact1720097108705632847 1
 98/home/decimal/Desktop/NamasteReact/NamasteReact/node_modules/css-tree/cjs/syntax/node/Selector.cjs1720096998909375897 0
 101/home/decimal/Desktop/NamasteReact/NamasteReact/node_modules/css-tree/cjs/syntax/node/Declaration.cjs1720096998761375570 0
 102/home/decimal/Desktop/NamasteReact/NamasteReact/node_modules/@parcel/utils/test/input/config/config.js1720096998605375224 0

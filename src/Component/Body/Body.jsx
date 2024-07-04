@@ -36,7 +36,7 @@ const Body = () => {
     const filterd = filterList.filter(
       (filterData) => filterData.info.avgRating > 4
     );
-    // setFilterSearchRest(filterd);
+    setFilterSearchRest(filterd);
   };
   // filter the rest cards and update the UI
   const searchData = () => {
